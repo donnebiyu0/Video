@@ -242,6 +242,7 @@
         height: 95%;
         position: relative;
         padding: 0;
+
     }
     .controls{
         width: 100%;
@@ -255,6 +256,11 @@
     }
     .volume-value{
         margin-left: 115px;
+    }
+}
+@media (max-width: 600px) {
+    .wra{
+        padding-bottom: 7rem;
     }
 }
 @media (max-width: 500px) {
