@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- video container -->
+    <div class="video-wrapper">
+      <div class="wra">
+        <video src="videos/11.mp4" class="video" id="video"></video>
+        <div class="controls">
+          <div class="progress-wrapper">
+            <!-- <div class="progress-bar"></div> -->
+            <progress
+              min="0"
+              max="100"
+              value="0"
+              id="video-progress"
+            ></progress>
+            <input type="range" min="0" max="100" value="0" id="progress-bar" />
+          </div>
+          <div class="control-btns">
+            <div class="left-side">
+              <i class="fa-solid fa-circle-play" title="play" id="play"></i>
+              <i class="fa-solid fa-volume-low volume-icon" title="play"></i>
+              <div class="volume-wrapper">
+                <progress
+                  max="100"
+                  min="0"
+                  value="50"
+                  class="volume-progress"
+                ></progress>
+                <input type="range" min="0" max="100" value="50" id="volume" />
+              </div>
+              <p class="volume-value">50</p>
+            </div>
+            <div class="right-side">
+              <select name="speed" id="speed" class="speed">
+                <option value="0.5">0.5</option>
+                <option value="0.75">0.75</option>
+                <option value="1" selected>1</option>
+                <option value="1.25">1.25</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+              </select>
+              <div class="times">
+                <p class="current-time">00:00 /</p>
+                <p class="duration">&nbsp;00:00</p>
+              </div>
+              <div class="full-screen">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- script rel -->
+    <script src="script.js"></script>
+  </body>
+</html>
